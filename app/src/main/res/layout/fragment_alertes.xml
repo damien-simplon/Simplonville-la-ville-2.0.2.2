@@ -6,17 +6,308 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
+
+
+
+
+    <androidx.fragment.app.FragmentContainerView
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="-84dp" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#AC0029" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        tools:layout_editor_absoluteX="150dp"
+        android:text="Alertes"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:background="#AC0029"
+        app:itemTextColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        tools:layout_editor_absoluteY="50dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="65dp"
+        tools:layout_editor_absoluteX="20dp"
+        android:textSize="20sp"
+        android:text="Travaux"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="90dp"
+        tools:layout_editor_absoluteX="20dp"
+        android:textSize="16sp"
+        android:text="26/01/22 - 10h"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="110dp"
+        tools:layout_editor_absoluteX="20dp"
+        android:textSize="16sp"
+        android:text="Rue de la rue d'à côté"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="65dp"
+        tools:layout_editor_absoluteX="200dp"
+        android:textSize="18sp"
+        android:text="Installation de dos d'ânes pour la sécurité des piétions dans la [...]"
+        android:textColor="#FFFFFF"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        tools:layout_editor_absoluteY="150dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="165dp"
+        tools:layout_editor_absoluteX="20dp"
+        android:textSize="20sp"
+        android:text="Travaux"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="190dp"
+        tools:layout_editor_absoluteX="20dp"
+        android:textSize="16sp"
+        android:text="26/01/22 - 10h"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="210dp"
+        tools:layout_editor_absoluteX="20dp"
+        android:textSize="16sp"
+        android:text="Rue de la rue d'à côté"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="165dp"
+        tools:layout_editor_absoluteX="200dp"
+        android:textSize="18sp"
+        android:text="Installation de dos d'ânes pour la sécurité des piétions dans la [...]"
+        android:textColor="#FFFFFF"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        tools:layout_editor_absoluteY="250dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="265dp"
+        tools:layout_editor_absoluteX="20dp"
+        android:textSize="20sp"
+        android:text="Travaux"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="290dp"
+        tools:layout_editor_absoluteX="20dp"
+        android:textSize="16sp"
+        android:text="26/01/22 - 10h"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="310dp"
+        tools:layout_editor_absoluteX="20dp"
+        android:textSize="16sp"
+        android:text="Rue de la rue d'à côté"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="265dp"
+        tools:layout_editor_absoluteX="200dp"
+        android:textSize="18sp"
+        android:text="Installation de dos d'ânes pour la sécurité des piétions dans la [...]"
+        android:textColor="#FFFFFF"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        tools:layout_editor_absoluteY="350dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="365dp"
+        tools:layout_editor_absoluteX="20dp"
+        android:textSize="20sp"
+        android:text="Travaux"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="390dp"
+        tools:layout_editor_absoluteX="20dp"
+        android:textSize="16sp"
+        android:text="26/01/22 - 10h"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="410dp"
+        tools:layout_editor_absoluteX="20dp"
+        android:textSize="16sp"
+        android:text="Rue de la rue d'à côté"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="365dp"
+        tools:layout_editor_absoluteX="200dp"
+        android:textSize="18sp"
+        android:text="Installation de dos d'ânes pour la sécurité des piétions dans la [...]"
+        android:textColor="#FFFFFF"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        tools:layout_editor_absoluteY="450dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="465dp"
+        tools:layout_editor_absoluteX="20dp"
+        android:textSize="20sp"
+        android:text="Travaux"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="490dp"
+        tools:layout_editor_absoluteX="20dp"
+        android:textSize="16sp"
+        android:text="26/01/22 - 10h"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="510dp"
+        tools:layout_editor_absoluteX="20dp"
+        android:textSize="16sp"
+        android:text="Rue de la rue d'à côté"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="465dp"
+        tools:layout_editor_absoluteX="200dp"
+        android:textSize="18sp"
+        android:text="Installation de dos d'ânes pour la sécurité des piétions dans la [...]"
+        android:textColor="#FFFFFF"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        tools:layout_editor_absoluteY="550dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="565dp"
+        tools:layout_editor_absoluteX="20dp"
+        android:textSize="20sp"
+        android:text="Travaux"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="590dp"
+        tools:layout_editor_absoluteX="20dp"
+        android:textSize="16sp"
+        android:text="26/01/22 - 10h"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="610dp"
+        tools:layout_editor_absoluteX="20dp"
+        android:textSize="16sp"
+        android:text="Rue de la rue d'à côté"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="565dp"
+        tools:layout_editor_absoluteX="200dp"
+        android:textSize="18sp"
+        android:text="Installation de dos d'ânes pour la sécurité des piétions dans la [...]"
+        android:textColor="#FFFFFF"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        tools:layout_editor_absoluteY="650dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="665dp"
+        tools:layout_editor_absoluteX="20dp"
+        android:textSize="20sp"
+        android:text="Travaux"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="690dp"
+        tools:layout_editor_absoluteX="20dp"
+        android:textSize="16sp"
+        android:text="26/01/22 - 10h"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="710dp"
+        tools:layout_editor_absoluteX="20dp"
+        android:textSize="16sp"
+        android:text="Rue de la rue d'à côté"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="665dp"
+        tools:layout_editor_absoluteX="200dp"
+        android:textSize="18sp"
+        android:text="Installation de dos d'ânes pour la sécurité des piétions dans la [...]"
+        android:textColor="#FFFFFF"/>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
